@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1748119926 source:c:\programação avançada\unidade 2\escultor3d\main.cpp
+	"sculptor.h"
+	<fstream>
+	"voxel.h"
+	"sculptor.cpp"
+
+1748108633 c:\programação avançada\unidade 2\escultor3d\sculptor.h
+	"voxel.h"
+	<fstream>
+
+1747939816 c:\programação avançada\unidade 2\escultor3d\voxel.h
+
+1748600078 c:\programação avançada\unidade 2\escultor3d\sculptor.cpp
+	"sculptor.h"
+	"voxel.h"
+	<fstream>
+	<iomanip>
+	<iostream>
+
+1748713769 source:c:\programacao avancada\unidade 2\escultor3d\main.cpp
+	"sculptor.h"
+	<fstream>
+	"voxel.h"
+	"sculptor.cpp"
+
+1748108633 c:\programacao avancada\unidade 2\escultor3d\sculptor.h
+	"voxel.h"
+	<fstream>
+
+1747939816 c:\programacao avancada\unidade 2\escultor3d\voxel.h
+
+1748710361 c:\programacao avancada\unidade 2\escultor3d\sculptor.cpp
+	"sculptor.h"
+	"voxel.h"
+	<fstream>
+	<iomanip>
+	<iostream>
+
