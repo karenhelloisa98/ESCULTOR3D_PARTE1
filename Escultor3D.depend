@@ -37,3 +37,22 @@
 	<iomanip>
 	<iostream>
 
+1750367021 source:c:\programacao avancada\escultor3d-parte1\main.cpp
+	"sculptor.h"
+	<fstream>
+	"voxel.h"
+	"sculptor.cpp"
+
+1749390872 c:\programacao avancada\escultor3d-parte1\sculptor.h
+	"voxel.h"
+	<fstream>
+
+1747939816 c:\programacao avancada\escultor3d-parte1\voxel.h
+
+1749390872 c:\programacao avancada\escultor3d-parte1\sculptor.cpp
+	"sculptor.h"
+	"voxel.h"
+	<fstream>
+	<iomanip>
+	<iostream>
+

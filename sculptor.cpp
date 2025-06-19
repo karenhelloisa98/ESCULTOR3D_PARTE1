@@ -171,7 +171,7 @@ void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int r
 
 void Sculptor::writeOFF(const char* filename)
 {
-    std::ofstream fout;
+    std::ofstream fout; //ativando o fluxo de saída
 
     fout.open(filename);
     if (!fout.is_open())

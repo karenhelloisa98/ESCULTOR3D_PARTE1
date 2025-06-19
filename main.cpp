@@ -5,88 +5,21 @@
 
 int main(){
     Sculptor s(100,100,100);
+    //Parte 1: Cabeça do pirulito (esfera rosa)
+    s.setColor(1, 0, 1, 1);  // Rosa
+    s.putSphere(15, 30, 15, 6);
 
-    s.setColor(0,1,0,1);
-    s.putBox(0,1,0,1,0,1);
+    //Corte (mordida) na parte da frente da esfera
+    s.cutBox(9, 21, 30, 36, 15, 21); // Fatia na lateral frontal
 
-    s.setColor(1,0,0,1);
-    s.putBox(1,2,0,1,0,1);
+    //Haste (cabo branco)
+    s.setColor(1, 1, 1, 1);  // Branco
+    s.putBox(14, 16, 0, 28, 14, 16);
 
-    s.setColor(0,1,1,1);
-    s.putBox(2,3,0,1,0,1);
-
-    s.setColor(0.5,0.3,1,1);
-    s.putBox(0,1,0,1,1,2);
-
-    s.setColor(1,1,0,1);
-    s.putBox(1,2,0,1,1,2);
-
-    s.setColor(1,0,1,1);
-    s.putBox(2,3,0,1,1,2);
-
-    s.setColor(0,0.5,1,1);
-    s.putBox(0,1,0,1,2,3);
-
-    s.setColor(0,1,0,1);
-    s.putBox(1,2,0,1,2,3);
-
-    s.setColor(1,0.5,0,1);
-    s.putBox(2,3,0,1,2,3);
-
-    s.setColor(0,0,1,1);
-    s.putBox(0,1,1,2,0,1);
-
-    s.setColor(1,0,1,1);
-    s.putBox(1,2,1,2,0,1);
-
-    s.setColor(0,0,1,1);
-    s.putBox(2,3,1,2,0,1);
-
-    s.setColor(0.7,0.4,0,1);
-    s.putBox(0,1,1,2,1,2);
-
-    s.setColor(1,0.4,0.2,1);
-    s.putBox(1,2,1,2,1,2);
-
-    s.setColor(1,1,0.2,1);
-    s.putBox(2,3,1,2,1,2);
-
-    s.setColor(1,0,0.2,1);
-    s.putBox(0,1,1,2,2,3);
-
-    s.setColor(1,0.6,0.2,1);
-    s.putBox(1,2,1,2,2,3);
-
-    s.setColor(0,1,0.2,1);
-    s.putBox(2,3,1,2,2,3);
-
-    s.setColor(0,1,1,1);
-    s.putBox(0,1,2,3,0,1);
-
-    s.setColor(0.6,1,0.3,1);
-    s.putBox(1,2,2,3,0,1);
-
-    s.setColor(1,0.2,0.9,1);
-    s.putBox(2,3,2,3,0,1);
-
-    s.setColor(0.4,0.2,0.9,1);
-    s.putBox(0,1,2,3,1,2);
-
-    s.setColor(1,0.2,0.3,1);
-    s.putBox(1,2,2,3,1,2);
-
-    s.setColor(0,1,0.3,1);
-    s.putBox(2,3,2,3,1,2);
-
-    s.setColor(1,1,0,1);
-    s.putBox(0,1,2,3,2,3);
-
-    s.setColor(0,0,0.6,1);
-    s.putBox(1,2,2,3,2,3);
-
-    s.setColor(1,0,0.6,1);
-    s.putBox(2,3,2,3,2,3);
+    //Furo no cabo (usar cutVoxel)
+    s.cutVoxel(15, 10, 15);
 
     s.writeOFF("Escultor3D.off");
+
     return 0;
 }

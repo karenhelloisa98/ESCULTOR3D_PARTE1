@@ -5,12 +5,12 @@
 
 class Sculptor {
 private:
-    Voxel ***v;
-    int nx,ny,nz;
-    float r,g,b,a;
+    Voxel ***v; //matriz 3D
+    int nx,ny,nz; //dimensões de cada voxel
+    float r,g,b,a; //cores
 public:
-    Sculptor(int _nx, int _ny, int _nz);
-    ~Sculptor();
+    Sculptor(int _nx, int _ny, int _nz); //método construtor
+    ~Sculptor(); //método destrutor
     void setColor(float r, float g, float b, float a);
     void putVoxel(int x, int y, int z);
     void cutVoxel(int x, int y, int z);
