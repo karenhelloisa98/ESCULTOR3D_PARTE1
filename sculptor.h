@@ -3,14 +3,15 @@
 #include "voxel.h"
 #include <fstream>
 
+//MANIPULA A ESCULTURA 3D
 class Sculptor {
 private:
-    Voxel ***v; //matriz 3D
-    int nx,ny,nz; //dimensões de cada voxel
-    float r,g,b,a; //cores
+    Voxel ***v; //PONTEIRO TRIPLO DA MATRIZ 3D
+    int nx,ny,nz; //DIMENSÕES DE CADA VOXEL
+    float r,g,b,a; //CORES ATUAIS
 public:
-    Sculptor(int _nx, int _ny, int _nz); //método construtor
-    ~Sculptor(); //método destrutor
+    Sculptor(int _nx, int _ny, int _nz); //CONSTRUTOR
+    ~Sculptor(); //DESTRUTOR
     void setColor(float r, float g, float b, float a);
     void putVoxel(int x, int y, int z);
     void cutVoxel(int x, int y, int z);
